@@ -7,16 +7,21 @@
     "build": "tsc",
     "fmt": "prettier --check '{src,test}/**/*.{t,j}s'",
     "fmt!": "prettier --write '{src,test}/**/*.{t,j}s'",
-    "test": "jest --colors"
+    "test": "jest --colors",
+    "format": "prettier-standard --format"
   },
   "keywords": [],
   "author": "Tomás Ruiz <tomastrg22@gmail.com> (https://github.com/tommytrg)",
   "license": "MIT",
   "devDependencies": {
-    "@types/jest": "^24.0.20",
-    "jest": "^24.9.0",
-    "prettier": "1.18.2",
-    "ts-jest": "^24.1.0",
-    "typescript": "^3.6.4"
+    "@types/jest": "^26.0.15",
+    "jest": "^26.6.3",
+    "prettier": "2.2.0",
+    "prettier-standard": "^16.4.1",
+    "ts-jest": "^26.4.4",
+    "typescript": "^4.1.2"
+  },
+  "dependencies": {
+    "ts-node": "^9.0.0"
   }
 }
