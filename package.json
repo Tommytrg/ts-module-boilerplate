@@ -1,17 +1,24 @@
 {
-  "name": "witnet-radon",
+  "name": "ts-module-boilerplate",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "dist/src/index.js",
+  "types": "dist/src/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
-    "build": "tsc",
-    "fmt": "prettier --check '{src,test}/**/*.{t,j}s'",
-    "fmt!": "prettier --write '{src,test}/**/*.{t,j}s'",
-    "test": "jest --colors",
-    "format": "prettier-standard --format"
+    "build": "tsc -p tsconfig.build.json",
+    "lint": "prettier-standard --format",
+    "prepare": "npm run build",
+    "test": "jest --colors"
   },
   "keywords": [],
   "author": "Tomás Ruiz <tomastrg22@gmail.com> (https://github.com/tommytrg)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tommytrg/ts-module-boilerplate.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/jest": "^26.0.15",
@@ -19,9 +26,8 @@
     "prettier": "2.2.0",
     "prettier-standard": "^16.4.1",
     "ts-jest": "^26.4.4",
+    "ts-node": "^9.0.0",
     "typescript": "^4.1.2"
   },
-  "dependencies": {
-    "ts-node": "^9.0.0"
-  }
+  "dependencies": {}
 }
