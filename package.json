@@ -15,7 +15,7 @@
     "build:watch": "tsc -w -p tsconfig.build.json",
     "lint": "prettier-standard --format",
     "prepare": "npm run build",
-    "test": "jest --colors"
+    "test": "jest --coverage --colors"
   },
   "keywords": [],
   "author": "Tomás Ruiz <tomastrg22@gmail.com> (https://github.com/tommytrg)",
