@@ -26,7 +26,6 @@
     "@types/jest": "latest",
     "jest": "latest",
     "prettier-standard": "latest",
-    "prettier": "latest",
     "ts-jest": "latest",
     "ts-node": "latest",
     "typescript": "latest"
