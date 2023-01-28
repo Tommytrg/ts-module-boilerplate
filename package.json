@@ -31,5 +31,8 @@
     "ts-node": "latest",
     "typescript": "latest"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "volta": {
+    "node": "18.13.0"
+  }
 }
